@@ -1,9 +1,12 @@
 import { StyleSheet, Text, View ,ScrollView } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import CurrencyButton from './components/CurrencyButton'
 import {currencybyCountry} from "./constants"
 
 const App = () => {
+  const [inputval , setinputval] = useState();
+  const [resultval , setresultval] = useState();
+  const [targtval, settargetval] = useState();
   return (
     <View>
       <Text>App</Text>
